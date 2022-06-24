@@ -11,7 +11,7 @@ class LoginButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialButton(
       onPressed: () {
-        print('Loading......!');
+        print('Please wait');
       },
       child: const Text(
         'Login',
