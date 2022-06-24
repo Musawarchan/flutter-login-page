@@ -1,3 +1,5 @@
+// ignore_for_file: sort_child_properties_last
+
 import 'package:flutter/material.dart';
 
 class LoginButton extends StatelessWidget {
@@ -7,27 +9,20 @@ class LoginButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () {
-        print('Login Succesfully');
+    return MaterialButton(
+      onPressed: () {
+        print('Loading......!');
       },
-      child: Container(
-        height: 50,
-        width: 230,
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(20),
-          color: Colors.blue,
-        ),
-        child: const Padding(
-          padding: EdgeInsets.all(10.0),
-          child: Text(
-            'Login',
-            textAlign: TextAlign.center,
-            style: TextStyle(
-                fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white),
-          ),
-        ),
+      child: const Text(
+        'Login',
+        style: TextStyle(fontSize: 25, color: Colors.white),
       ),
+      color: Colors.blue,
+      shape: const RoundedRectangleBorder(
+          borderRadius: BorderRadius.all(Radius.circular(15.0))),
+      elevation: 10.0,
+      minWidth: 240.0,
+      height: 50,
     );
   }
 }
