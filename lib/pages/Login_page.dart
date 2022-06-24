@@ -1,9 +1,4 @@
-// Pascal case: MusawarHussain
-// Pascal case: for naming classes
-// snake case: musawar_hussain
-//snake case: using for naming source files
-// camel case: musawarHussain
-// camel case: using for naming variables and  methods
+
 
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/components/login_with_text.dart';
