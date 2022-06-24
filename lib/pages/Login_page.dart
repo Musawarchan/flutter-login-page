@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/components/login_with_text.dart';
 import 'package:flutter_application_1/components/textfield.dart';
@@ -34,7 +32,9 @@ class LoginPage extends StatelessWidget {
               ),
               const MyTextFieldSec(),
               TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    print('Create new Password');
+                  },
                   child: const Text(
                     'Forget Password',
                     style: TextStyle(color: Colors.black),
@@ -42,7 +42,9 @@ class LoginPage extends StatelessWidget {
               const LoginButton(),
               const Spacer(),
               TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  print('Create Acount');
+                },
                 child: const Text('New User? Create Acount',
                     style: TextStyle(
                       color: Colors.black,
