@@ -10,9 +10,7 @@ class LoginButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialButton(
-      onPressed: () {
-        print('Please wait');
-      },
+      onPressed: () {},
       child: const Text(
         'Login',
         style: TextStyle(fontSize: 25, color: Colors.white),
