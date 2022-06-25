@@ -34,21 +34,20 @@ class LoginPage extends StatelessWidget {
               ),
               const MyTextFieldSec(),
               TextButton(
-                  onPressed: () {
-                    print('Create new Password');
-                  },
+                  onPressed: () {},
                   child: const Text(
                     'Forget Password',
-                    style: TextStyle(color: Colors.black),
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold, color: Colors.black),
                   )),
               const LoginButton(),
               const Spacer(),
+              const Spacer(),
               TextButton(
-                onPressed: () {
-                  print('Create Acount');
-                },
+                onPressed: () {},
                 child: const Text('New User? Create Acount',
                     style: TextStyle(
+                      fontWeight: FontWeight.bold,
                       color: Colors.black,
                     )),
               ),
